@@ -5,7 +5,7 @@
    <url type="donation">http://www.amnestyusa.org/</url>
    <url type="help">https://help.gnome.org/users/gnumeric/stable/gnumeric.html</url>
 +  <releases>
-+    <release version="@VERSION@" date="2021-10-01" />
++    <release version="1.12.50" date="2021-06-10" />
 +  </releases>
 +  <content_rating type="oars-1.1" />
  </application>
