@@ -1,10 +1,11 @@
 {
     "id": "org.gnumeric.Gnumeric",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "41",
+    "runtime-version": "42",
     "sdk": "org.gnome.Sdk",
     "command": "gnumeric",
     "rename-icon": "gnumeric",
+    "copy-icon": true,
     "rename-desktop-file": "gnumeric.desktop",
     "rename-appdata-file": "gnumeric.appdata.xml",
     "finish-args" : [
@@ -35,8 +36,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.47.tar.xz",
-                    "sha256": "d188ebd3787b5375a8fd38ee6f761a2007de5e98fa0cf5623f271daa67ba774d"
+                    "url" : "https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.49.tar.xz",
+                    "sha256": "e9ebe36688f010c9e6e40c8903f3732948deb8aca032578d07d0751bd82cf857"
                 }
             ]
         },
@@ -54,8 +55,8 @@
             "sources" : [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/goffice/0.10/goffice-0.10.49.tar.xz",
-                    "sha256": "5ffc18dbb385edfb85b6c6254b9e5b4cb3d2ffa3042b932cdbce8e37f4b307e9"
+                    "url": "https://download.gnome.org/sources/goffice/0.10/goffice-0.10.51.tar.xz",
+                    "sha256": "2e8410884d6a51ae00c9420928abfa73f7a552c1aa222371df4f2dc5acc3cd23"
                 }
             ]
         },
@@ -114,8 +115,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.50.tar.xz",
-                    "sha256": "758819ba1bd6983829f9e7c6d71a7fa20cd75a3652a271e5bb003d5d8bcc14b8"
+                    "url": "https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.51.tar.xz",
+                    "sha256": "a00e6c6e4ecddadabd9b0ae18013d7b05937fdcb8f9aad5a73b95923c7aeb1dd"
                 },
                 {
                     "type": "patch",
