@@ -1,12 +1,21 @@
 --- a/gnumeric.appdata.xml.in-orig	2021-10-01 13:39:16.109593714 -0400
 +++ b/gnumeric.appdata.xml.in	2020-01-31 11:21:39.000000000 -0500
+@@ -2,7 +2,7 @@
+ <!-- Copyright 2014-2022 Morten Welinder <terra@gnome.org> -->
+ <application>
+ <_name>The Gnumeric Spreadsheet</_name>
+-<id type="desktop">org.gnumeric.gnumeric</id>
++<id type="desktop">org.gnumeric.Gnumeric</id>
+ <metadata_license>CC0-1.0</metadata_license>
+ <!-- No idea what the SPDX ID for this is.  -->
+ <project_license>GPL-2.0 or GPL-3.0</project_license>
 @@ -28,8 +28,8 @@
    <!-- These guys need your donations more than we do: -->
    <url type="donation">http://www.amnestyusa.org/</url>
    <url type="help">https://help.gnome.org/users/gnumeric/stable/gnumeric.html</url>
    <releases>
--    <release version="@VERSION@" date="2021-06-10" />
-+    <release version="1.12.51" date="2022-01-20" />
+-    <release version="##VERSION##" date="2021-06-10" />
++    <release version="1.12.55" date="2023-02-03" />
    </releases>
    <content_rating type="oars-1.1" />
  </application>

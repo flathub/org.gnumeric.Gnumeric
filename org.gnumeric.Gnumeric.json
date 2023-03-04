@@ -1,7 +1,7 @@
 {
     "id": "org.gnumeric.Gnumeric",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "42",
+    "runtime-version": "43",
     "sdk": "org.gnome.Sdk",
     "command": "gnumeric",
     "rename-icon": "gnumeric",
@@ -115,8 +115,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.51.tar.xz",
-                    "sha256": "a00e6c6e4ecddadabd9b0ae18013d7b05937fdcb8f9aad5a73b95923c7aeb1dd"
+                    "url": "https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.55.tar.xz",
+                    "sha256": "c69a09cd190b622acca476bbc3d4c03d68d7ccf59bba61bf036ce60885f9fb65"
                 },
                 {
                     "type": "patch",
