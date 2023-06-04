@@ -1,7 +1,7 @@
 {
     "id": "org.gnumeric.Gnumeric",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "43",
+    "runtime-version": "44",
     "sdk": "org.gnome.Sdk",
     "command": "gnumeric",
     "rename-icon": "gnumeric",
@@ -36,8 +36,16 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.49.tar.xz",
-                    "sha256": "e9ebe36688f010c9e6e40c8903f3732948deb8aca032578d07d0751bd82cf857"
+                    "url" : "https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.50.tar.xz",
+                    "sha256": "6e6c20d0778339069d583c0d63759d297e817ea10d0d897ebbe965f16e2e8e52",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "libgsf",
+                        "versions": {
+                            "<": "1.15"
+                        },
+                        "stable-only": true
+                    }
                 }
             ]
         },
@@ -55,8 +63,16 @@
             "sources" : [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/goffice/0.10/goffice-0.10.51.tar.xz",
-                    "sha256": "2e8410884d6a51ae00c9420928abfa73f7a552c1aa222371df4f2dc5acc3cd23"
+                    "url": "https://download.gnome.org/sources/goffice/0.10/goffice-0.10.55.tar.xz",
+                    "sha256": "16a221191855a6a6c0d06b1ef8e481cf3f52041a654ec96d35817045ba1a99af",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "goffice",
+                        "versions": {
+                            "<": "0.11"
+                        },
+                        "stable-only": true
+                    }
                 }
             ]
         },
@@ -116,7 +132,12 @@
                 {
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.55.tar.xz",
-                    "sha256": "c69a09cd190b622acca476bbc3d4c03d68d7ccf59bba61bf036ce60885f9fb65"
+                    "sha256": "c69a09cd190b622acca476bbc3d4c03d68d7ccf59bba61bf036ce60885f9fb65",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "gnumeric",
+                        "stable-only": true
+                    }
                 },
                 {
                     "type": "patch",
