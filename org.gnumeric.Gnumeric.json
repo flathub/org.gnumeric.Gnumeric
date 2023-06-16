@@ -141,7 +141,10 @@
                 },
                 {
                     "type": "patch",
-                    "path": "appdata.patch"
+                    "paths": [
+                        "patches/appdata.patch",
+                        "patches/tooltip-fix.patch"
+                    ]
                 }
             ]
         }
