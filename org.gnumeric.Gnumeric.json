@@ -128,6 +128,9 @@
             "cleanup": [
                 "/include"
             ],
+            "post-install": [
+                "appstream-util modify $FLATPAK_DEST/share/metainfo/gnumeric.appdata.xml id $FLATPAK_ID"
+            ],
             "sources": [
                 {
                     "type": "archive",
