@@ -8,7 +8,7 @@
     "copy-icon": true,
     "rename-desktop-file": "gnumeric.desktop",
     "rename-appdata-file": "gnumeric.appdata.xml",
-    "finish-args" : [
+    "finish-args": [
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
@@ -20,11 +20,11 @@
     "modules": [
         "shared-modules/intltool/intltool-0.51.json",
         {
-            "name" : "gsf",
+            "name": "gsf",
             "config-opts": [
                 "--disable-static"
             ],
-            "cleanup" : [
+            "cleanup": [
                 "/include",
                 "/lib/pkgconfig",
                 "/share/man",
@@ -33,11 +33,11 @@
                 "/bin/gsf*",
                 "*.la"
             ],
-            "sources" : [
+            "sources": [
                 {
-                    "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.50.tar.xz",
-                    "sha256": "6e6c20d0778339069d583c0d63759d297e817ea10d0d897ebbe965f16e2e8e52",
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.51.tar.xz",
+                    "sha256": "f0b83251f98b0fd5592b11895910cc0e19f798110b389aba7da1cb7c474017f5",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libgsf",
@@ -50,21 +50,21 @@
             ]
         },
         {
-            "name" : "goffice",
+            "name": "goffice",
             "config-opts": [
                 "--disable-static"
             ],
-            "cleanup" : [
+            "cleanup": [
                 "/include",
                 "/share/gtk-doc",
                 "/lib/pkgconfig",
                 "*.la"
             ],
-            "sources" : [
+            "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/goffice/0.10/goffice-0.10.55.tar.xz",
-                    "sha256": "16a221191855a6a6c0d06b1ef8e481cf3f52041a654ec96d35817045ba1a99af",
+                    "url": "https://download.gnome.org/sources/goffice/0.10/goffice-0.10.56.tar.xz",
+                    "sha256": "b8640a2fee0c0a57784b2a5b92944a2932c789db1039ddf5a269ad634796e7e2",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "goffice",
@@ -77,11 +77,11 @@
             ]
         },
         {
-            "name" : "psiconv",
+            "name": "psiconv",
             "config-opts": [
                 "--disable-static"
             ],
-            "cleanup" : [
+            "cleanup": [
                 "/include",
                 "/share/man",
                 "/share/psiconv",
@@ -91,15 +91,15 @@
             "build-options": {
                 "cflags": "-fcommon"
             },
-            "sources" : [
+            "sources": [
                 {
                     "type": "archive",
                     "url": "http://www.frodo.looijaard.name/system/files/software/psiconv/psiconv-0.9.9.tar.gz",
                     "sha256": "6d51fe79b502a1e277bea275a574ae2db5b1b9d7daef703a8fa3635ae02a8bb0"
                 },
                 {
-                    "type" : "shell",
-                    "commands" : [
+                    "type": "shell",
+                    "commands": [
                         "autoreconf -vfi"
                     ]
                 }
@@ -134,8 +134,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.55.tar.xz",
-                    "sha256": "c69a09cd190b622acca476bbc3d4c03d68d7ccf59bba61bf036ce60885f9fb65",
+                    "url": "https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.56.tar.xz",
+                    "sha256": "51a38f35ac5b0f71defa8b9e20bf2e08563798f1cb33379a9a17726fb1e3e1b2",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnumeric",
