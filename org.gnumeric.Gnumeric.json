@@ -8,7 +8,7 @@
     "copy-icon": true,
     "rename-desktop-file": "gnumeric.desktop",
     "rename-appdata-file": "gnumeric.appdata.xml",
-    "finish-args" : [
+    "finish-args": [
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
@@ -20,11 +20,11 @@
     "modules": [
         "shared-modules/intltool/intltool-0.51.json",
         {
-            "name" : "gsf",
+            "name": "gsf",
             "config-opts": [
                 "--disable-static"
             ],
-            "cleanup" : [
+            "cleanup": [
                 "/include",
                 "/lib/pkgconfig",
                 "/share/man",
@@ -33,11 +33,11 @@
                 "/bin/gsf*",
                 "*.la"
             ],
-            "sources" : [
+            "sources": [
                 {
-                    "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.50.tar.xz",
-                    "sha256": "6e6c20d0778339069d583c0d63759d297e817ea10d0d897ebbe965f16e2e8e52",
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libgsf/1.14/libgsf-1.14.51.tar.xz",
+                    "sha256": "f0b83251f98b0fd5592b11895910cc0e19f798110b389aba7da1cb7c474017f5",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libgsf",
@@ -50,17 +50,17 @@
             ]
         },
         {
-            "name" : "goffice",
+            "name": "goffice",
             "config-opts": [
                 "--disable-static"
             ],
-            "cleanup" : [
+            "cleanup": [
                 "/include",
                 "/share/gtk-doc",
                 "/lib/pkgconfig",
                 "*.la"
             ],
-            "sources" : [
+            "sources": [
                 {
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/goffice/0.10/goffice-0.10.55.tar.xz",
@@ -77,11 +77,11 @@
             ]
         },
         {
-            "name" : "psiconv",
+            "name": "psiconv",
             "config-opts": [
                 "--disable-static"
             ],
-            "cleanup" : [
+            "cleanup": [
                 "/include",
                 "/share/man",
                 "/share/psiconv",
@@ -91,15 +91,15 @@
             "build-options": {
                 "cflags": "-fcommon"
             },
-            "sources" : [
+            "sources": [
                 {
                     "type": "archive",
                     "url": "http://www.frodo.looijaard.name/system/files/software/psiconv/psiconv-0.9.9.tar.gz",
                     "sha256": "6d51fe79b502a1e277bea275a574ae2db5b1b9d7daef703a8fa3635ae02a8bb0"
                 },
                 {
-                    "type" : "shell",
-                    "commands" : [
+                    "type": "shell",
+                    "commands": [
                         "autoreconf -vfi"
                     ]
                 }
