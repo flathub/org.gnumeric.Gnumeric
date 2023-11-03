@@ -4,10 +4,10 @@
     "runtime-version": "45",
     "sdk": "org.gnome.Sdk",
     "command": "gnumeric",
-    "rename-icon": "gnumeric",
+    "rename-icon": "org.gnumeric.gnumeric",
     "copy-icon": true,
-    "rename-desktop-file": "gnumeric.desktop",
-    "rename-appdata-file": "gnumeric.appdata.xml",
+    "rename-desktop-file": "org.gnumeric.gnumeric.desktop",
+    "rename-appdata-file": "org.gnumeric.gnumeric.appdata.xml",
     "finish-args": [
         "--share=ipc",
         "--socket=fallback-x11",
@@ -129,7 +129,7 @@
                 "/include"
             ],
             "post-install": [
-                "appstream-util modify $FLATPAK_DEST/share/metainfo/gnumeric.appdata.xml id $FLATPAK_ID"
+                "appstream-util modify $FLATPAK_DEST/share/metainfo/org.gnumeric.gnumeric.appdata.xml id $FLATPAK_ID"
             ],
             "sources": [
                 {
@@ -141,14 +141,7 @@
                         "name": "gnumeric",
                         "stable-only": true
                     }
-                },
-                {
-                    "type": "patch",
-                    "paths": [
-                        "patches/appdata.patch",
-                        "patches/tooltip-fix.patch"
-                    ]
-                }
+                 }
             ]
         }
     ]
