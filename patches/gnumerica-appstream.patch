@@ -1,0 +1,12 @@
+diff --git a/org.gnumeric.gnumeric.appdata.xml.in b/org.gnumeric.gnumeric.appdata.xml.in
+index 85b1b02..7e22ec4 100644
+--- a/org.gnumeric.gnumeric.appdata.xml.in
++++ b/org.gnumeric.gnumeric.appdata.xml.in
+@@ -54,7 +54,6 @@
+     <kudo>HiDpiIcon</kudo>
+     <kudo>ModernToolkit</kudo>
+   </kudos>
+-  <project_group>GNOME</project_group>
+   <_developer_name>The Gnumeric Team</_developer_name>
+   <url type="homepage">http://www.gnumeric.org/</url>
+   <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnumeric/issues</url>
