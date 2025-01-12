@@ -1,7 +1,7 @@
 {
     "id": "org.gnumeric.Gnumeric",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "46",
+    "runtime-version": "47",
     "sdk": "org.gnome.Sdk",
     "command": "gnumeric",
     "rename-icon": "org.gnumeric.gnumeric",
@@ -107,6 +107,9 @@
         },
         {
             "name": "pxlib",
+            "build-options": {
+                "cflags": "-fpermissive"
+            },
             "config-opts": [
                 "--disable-static"
             ],
