@@ -63,8 +63,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/goffice/0.10/goffice-0.10.57.tar.xz",
-                    "sha256": "66bfd7e31d2f6756d5a62c3670383cbba02b3cb4c1042950192a801b72a3c9ab",
+                    "url": "https://download.gnome.org/sources/goffice/0.10/goffice-0.10.59.tar.xz",
+                    "sha256": "b08f7173325594b71fbbea476a30b5b3120c3dadff5c0a26d140e4e524916622",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "goffice",
@@ -134,8 +134,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.57.tar.xz",
-                    "sha256": "aff50b1b62340c24fccf453d5fad3e7fb73f4bc4b34f7e34b6c3d2d9af6a1e4f",
+                    "url": "https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.59.tar.xz",
+                    "sha256": "cb3750b176d641f9423df721b831658c829557552f8887fedf8a53d907eceb51",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnumeric",
