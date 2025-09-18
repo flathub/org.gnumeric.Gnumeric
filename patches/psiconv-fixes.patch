@@ -1,0 +1,39 @@
+diff --git a/compat/getopt.h b/compat/getopt.h
+index b0147e9..96b1246 100644
+--- a/compat/getopt.h
++++ b/compat/getopt.h
+@@ -133,7 +133,7 @@ struct option
+    errors, only prototype getopt for the GNU C library.  */
+ extern int getopt (int __argc, char *const *__argv, const char *__shortopts);
+ # else /* not __GNU_LIBRARY__ */
+-extern int getopt ();
++extern int getopt (int __argc, char *const *__argv, const char *__shortopts);
+ # endif /* __GNU_LIBRARY__ */
+ 
+ # ifndef __need_getopt
+diff --git a/program/psiconv/psiconv.c b/program/psiconv/psiconv.c
+index b73b901..de26cb9 100644
+--- a/program/psiconv/psiconv.c
++++ b/program/psiconv/psiconv.c
+@@ -44,6 +44,8 @@
+ #include "psiconv.h"
+ #include "gen.h"
+ 
++psiconv_list fileformat_list;
++
+ static void print_help(void);
+ static void print_version(void);
+ static void strtoupper(char *str);
+diff --git a/program/psiconv/psiconv.h b/program/psiconv/psiconv.h
+index 1ec0a7e..68b7dc7 100644
+--- a/program/psiconv/psiconv.h
++++ b/program/psiconv/psiconv.h
+@@ -52,7 +52,7 @@ typedef struct fileformat_s {
+   output_function *output;
+ } *fileformat;
+ 
+-psiconv_list fileformat_list; /* of struct psiconv_fileformat */
++extern psiconv_list fileformat_list; /* of struct psiconv_fileformat */
+ 
+ 
+ #endif /* PSICONV_H */
