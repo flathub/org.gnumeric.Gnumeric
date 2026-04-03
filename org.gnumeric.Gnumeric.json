@@ -1,7 +1,7 @@
 {
     "id": "org.gnumeric.Gnumeric",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "command": "gnumeric",
     "rename-icon": "org.gnumeric.gnumeric",
