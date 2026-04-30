@@ -1,0 +1,23 @@
+diff --git a/plugins/psiconv/psiconv-read.c b/plugins/psiconv/psiconv-read.c
+index 9c3dcfd97..81fe419c3 100644
+--- a/plugins/psiconv/psiconv-read.c
++++ b/plugins/psiconv/psiconv-read.c
+@@ -56,6 +56,18 @@ psi_new_string (psiconv_ucs2 const *data)
+ 		g_utf16_to_utf8 (data, -1, NULL, NULL, NULL));
+ }
+ 
++static GnmCellRef *
++p_cellref_init (GnmCellRef *res,
++                int row, gboolean row_abs,
++                int col, gboolean col_abs)
++{
++        res->sheet = NULL;
++        res->row = row;
++        res->col = col;
++        res->row_relative = row_abs ? 0 : 1;
++        res->col_relative = col_abs ? 0 : 1;
++        return res;
++}
+ 
+ static void
+ set_format (GnmStyle *style, const psiconv_sheet_numberformat psi_numberformat)
