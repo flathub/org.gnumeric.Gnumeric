@@ -1,8 +1,8 @@
 {
     "id": "org.gnumeric.Gnumeric",
-    "runtime": "org.gnome.Platform",
-    "runtime-version": "50",
-    "sdk": "org.gnome.Sdk",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "26.08",
+    "sdk": "org.freedesktop.Sdk",
     "command": "gnumeric",
     "rename-icon": "org.gnumeric.gnumeric",
     "copy-icon": true,
